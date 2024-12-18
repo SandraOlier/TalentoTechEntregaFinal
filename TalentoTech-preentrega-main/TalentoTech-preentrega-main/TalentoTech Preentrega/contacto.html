@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aut&eacute;ntica Paella Espa&ntilde;ola || 3DFood</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/contacto.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/api.css">
+   
+
+
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+</head>
+
+<body>
+    <div class="boton-whatsapp">
+        <a href="http://wa.link/c348cf"><img src="Images/whatsapp.png" alt="whatsapp"></a>
+    </div>
+
+    <div class="contenedor">
+        <div class="header">
+            <div class="logo">
+                <img src="Images/Logo3DFood.png" alt="Logo">
+            </div>
+
+        </div>
+        <div class="contenedor-menu">
+            <div class="menu">
+                <div class="botones-menu"> <a href="index.html">Home</a></div>
+                <div class="botones-menu"><a href="nosotros.html">Quienes Somos</a></div>
+                <div class="botones-menu"><a href="recetas.html">Recetas</a></div>
+                <div class="botones-menu"><a href="recetas2.html">Recetario</a></div>
+                <div class="botones-menu"><a href="contacto.html">Contacto</a></div>
+                <div class="botones-menu"><a href="api.html">Api</a></div>
+            </div>
+        </div>
+        <hr class="hr-1">
+        <hr class="hr-2">
+
+        <div class="contenedor-contacto">
+
+
+
+            <div class="formulario">
+                <p>Envianos tu mensaje que con GUSTO lo responderemos!</p>
+                <br>
+                <form action="procesar_form.php" method="post" enctype="text/plain">
+                    <input type="text" id="Nombre" placeholder="Nombre"> <br> <br>
+                    <input type="email" id="Email" placeholder="EMail"><br> <br>
+                    <input type="tel" id="Telefono" placeholder="Teléfono"> <br><br>
+                    <textarea id="Mensaje" id="textarea" rows="5" cols="35" placeholder="Mensaje"></textarea><br><br>
+                    <input type="submit" value="Enviar" id="Enviar">
+
+                </form>
+            </div>
+            <br>
+            <div class="contenedor-mapa">
+                <div class="mapa">
+                    <h4 id="titulo-mapa">Aquí estudiamos </h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2620806086356!2d-58.43973472485618!3d-34.59753375717064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbe1a5a0565f%3A0x10cb5497b82c2008!2seTestOps%3A%20Banco%20de%20Talento%20Tecnol%C3%B3gico!5e0!3m2!1ses-419!2sar!4v1732288485788!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="productos"></div>
+    <div id="carrito"></div>
+
+    <div class="carrito-container">
+        <div class="carrito"> <img src="Images/carrito.png" alt="Carrito de Compras" class="carrito-img">
+            <div class="carrito-info">
+                <p>Cantidad: <span id="cantidad">0</span></p> <button id="agregar" class="btn">Agregar</button> <button
+                    id="eliminar" class="btn">Eliminar Todo</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+<div class="footer">
+    3DFood - SANDRA OLIER || TALENTO TECH 2024 All Rights Reserved.🍴💗
+</div>
+</body>
+
+</html>
